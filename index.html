@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailing Express - Delhi's Premium Car Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.background-images {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.08;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.background-images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+        .video-section {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(0, 0, 0, 0.8);
+            margin: 20px 0;
+        }
+        
+        .video-container {
+            max-width: 375px;
+            margin: 0 auto;
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            width: 100%;
+            display: block;
+        }
+        .services {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    flex: 0 1 200px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-card i {
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.contact h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.info-item {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+
+.info-item i {
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.info-item p {
+    font-size: 1.1rem;
+}
+
+.info-item a {
+    color: inherit;
+    text-decoration: none;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.contact-form {
+    text-align: left;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: red;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: darkred;
+}
+
+.map {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+    </style>
+</head>
+<body>
+    <div class="background-images">
+        <img src="images/4bb2c000-d88a-454e-9b4b-4654daacc7b1.JPG" alt="">
+        <img src="images/6e3fecb5-7388-4f9c-bdfe-250c47de4f24.JPG" alt="">
+        <img src="images/8c5d98d0-b469-47a0-a692-21cebd403763.JPG" alt="">
+        <img src="images/08ed5bde-93d6-4aec-8768-11fb28670b57.JPG" alt="">
+        <img src="images/9e75bb52-0371-4bfa-b549-aa65b97a72c0.JPG" alt="">
+        <img src="images/9f644e45-8229-4ed0-af71-10d6dd17ed22.JPG" alt="">
+        <img src="images/61a3aa6d-b43d-476a-a4f6-65f645c572f3.JPG" alt="">
+        <img src="images/63c6e2c7-7780-4e9e-856c-72c7f2ddf8e5.JPG" alt="">
+        <img src="images/064a3e76-1b38-4a8f-a284-f01f8e950e9e.JPG" alt="">
+        <img src="images/97b565ca-dce6-4d39-ab59-c764223eb9d4.JPG" alt="">
+        <img src="images/125f4b4f-079e-4a8e-8ab8-b1a4d7711010.JPG" alt="">
+        <img src="images/296d45c9-412c-440d-abb4-3fbc12f41cb1.JPG" alt="">
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span>Detailing Express</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Car Care Services in Delhi</h1>
+            <p>Specializing in Detailing, PPF, Car Wrap & Ceramic Coating</p>
+            <a href="#contact" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-shower"></i>
+                <h3>Foam Wash</h3>
+                <p>Premium foam wash service for thorough cleaning</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>PPF</h3>
+                <p>Paint Protection Film for ultimate vehicle protection</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-car"></i>
+                <h3>Car Wrap</h3>
+                <p>Custom car wrapping solutions</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-spray-can"></i>
+                <h3>Car Detailing</h3>
+                <p>Professional detailing services</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-layer-group"></i>
+                <h3>Ceramic Coating</h3>
+                <p>Long-lasting ceramic protection</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="video-container">
+            <video controls width="375" autoplay muted loop>
+                <source src="videos/VIDEO-2025-02-13-22-56-44.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2>Our Work</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/4bb2c000-d88a-454e-9b4b-4654daacc7b1.JPG" alt="Car Service">
+            </div>
+            <div class="gallery-item">
+                <img src="images/6e3fecb5-7388-4f9c-bdfe-250c47de4f24.JPG" alt="Car Service">
+            </div>
+            <div class="gallery-item">
+                <img src="images/8c5d98d0-b469-47a0-a692-21cebd403763.JPG" alt="Car Service">
+            </div>
+            <div class="gallery-item">
+                <img src="images/08ed5bde-93d6-4aec-8768-11fb28670b57.JPG" alt="Car Service">
+            </div>
+            <div class="gallery-item">
+                <img src="images/9e75bb52-0371-4bfa-b549-aa65b97a72c0.JPG" alt="Car Service">
+            </div>
+            <div class="gallery-item">
+                <img src="images/9f644e45-8229-4ed0-af71-10d6dd17ed22.JPG" alt="Car Service">
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Shop No.19, DDA MKT., Site-2, GHK. Paschim Vihar</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p><a href="tel:+919999999999">+91 99999 99999</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Mon - Sun: 9:00 AM - 7:00 PM</p>
+                </div>
+            </div>
+    
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.8473872079784!2d77.08754731508652!3d28.67661798239947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04b1b9b0ca87%3A0x7b4d1e5f0e424c9f!2sDDA%20Market%2C%20Site%202%2C%20Paschim%20Vihar%2C%20Delhi%2C%20110063!5e0!3m2!1sen!2sin!4v1645609037012!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
